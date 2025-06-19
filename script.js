@@ -20,8 +20,8 @@ Promise.all(promises).then(results => {
 
   output.innerHTML = '';
 
-
-  results.forEach(result => {
+ 
+  results.forEach(result => { 
 	const row = document.createElement('tr');
 	row.innerHTML = `<td>${result.label}</td><td>${result.time.toFixed(3)}</td>`;
 	output.appendChild(row);
